@@ -1,31 +1,55 @@
-# Titanic-Survival-Prediction
 🚢 Titanic Survival Prediction
-This project focuses on predicting the survival of passengers aboard the Titanic using machine learning techniques. Leveraging the famous Titanic dataset from Kaggle, the model analyzes features such as age, sex, class, and fare to determine the likelihood of survival.
+This project uses machine learning to predict whether a passenger on the Titanic survived or not, based on features like age, gender, passenger class, and fare. It involves data cleaning, exploratory data analysis (EDA), and model building using logistic regression.
 
-📌 Project Overview
-The sinking of the Titanic is one of the most infamous shipwrecks in history. In this project, we apply data science techniques to explore the dataset, clean and preprocess the data, visualize key insights, and build predictive models that estimate whether a passenger survived.
+📊 Project Workflow
+1. Data Loading and Preprocessing
+Dataset: train.csv from the Kaggle Titanic competition
 
-🔍 Features
-Exploratory Data Analysis (EDA) using Seaborn and Matplotlib
-Data cleaning and preprocessing (handling null values, encoding categorical variables)
-Feature engineering for improved model performance
-Model training using Logistic Regression, Random Forest, and XGBoost
-Model evaluation using accuracy, confusion matrix, and classification report
-Hyperparameter tuning with GridSearchCV
-Visualizations for better understanding of survival factors
+Handled missing values
 
-🛠️ Tech Stack
+Converted categorical features (like Sex, Embarked) to numerical values
+
+2. Exploratory Data Analysis (EDA)
+Visualized survival distribution by gender, class, and age group using Seaborn
+
+Analyzed correlations between features and survival rates
+
+3. Model Training
+Split the data into training and testing sets using train_test_split
+
+Used Logistic Regression to model survival probability
+
+Evaluated the model using accuracy score
+
+🛠️ Technologies Used
 Python
-Pandas & NumPy
-Seaborn & Matplotlib
-Scikit-learn
-XGBoost
 
-📁 Dataset
-The dataset used is the Titanic dataset from Kaggle, containing information such as:
-PassengerId
-Pclass (ticket class)
-Name, Sex, Age
-SibSp, Parch (family aboard)
-Ticket, Fare, Cabin, Embarked
-Survived (target variable)
+NumPy & Pandas
+
+Matplotlib & Seaborn
+
+Scikit-learn (for model building and evaluation)
+
+📁 Dataset Features
+Pclass: Ticket class (1 = 1st, 2 = 2nd, 3 = 3rd)
+
+Sex: Gender
+
+Age: Age in years
+
+SibSp: Number of siblings/spouses aboard
+
+Parch: Number of parents/children aboard
+
+Fare: Passenger fare
+
+Embarked: Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
+
+Survived: Survival (0 = No, 1 = Yes)
+
+📈 Results
+Model: Logistic Regression
+
+Evaluation metric: Accuracy
+
+Final accuracy achieved: [insert your accuracy here] on the test set
